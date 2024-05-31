@@ -1,0 +1,156 @@
+#minicircle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.bounding {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem {
+    transform: translateY(120%);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    padding-left: 45%;
+}
+
+.heading h1 {
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 100;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Helvetica Now Var Display Thin;
+}
+
+.work1 {
+    border: solid;
+    width: 45%;
+    border-radius: 10px;
+    margin-left: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pageimg2 {
+    height: 385px;
+    width: 700px;
+    object-fit: contain;
+}
+
+.work2 {
+    border: solid;
+    width: 45%;
+    border-radius: 10px;
+    margin-right: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pageimg {
+    height: 400px;
+    width: 700px;
+    object-fit: contain;
+}
+
+.hero2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
+    .heading {
+        padding-left: 40%;
+    }
+    .heading h1 {
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .heading {
+        padding-left: 35%;
+    }
+    .heading h1 {
+        font-size: 7vw;
+    }
+    .work1, .work2 {
+        width: 40%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .pageimg, .pageimg2 {
+        width: 600px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .heading {
+        padding-left: 30%;
+    }
+    .heading h1 {
+        font-size: 8vw;
+    }
+    .hero, .hero2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work1, .work2 {
+        width: 80%;
+        margin: 20px 0;
+    }
+    .pageimg, .pageimg2 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .heading {
+        padding-left: 20%;
+    }
+    .heading h1 {
+        font-size: 9vw;
+    }
+    .work1, .work2 {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .heading {
+        padding-left: 10%;
+    }
+    .heading h1 {
+        font-size: 10vw;
+    }
+    .work1, .work2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
