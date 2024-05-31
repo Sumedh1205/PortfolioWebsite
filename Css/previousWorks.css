@@ -47,6 +47,10 @@ body {
     text-align: center;
     overflow: hidden;
 }
+.work1 a{
+    text-decoration: none;
+    color: white;
+}
 
 .pageimg2 {
     height: 385px;
